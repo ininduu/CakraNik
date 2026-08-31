@@ -10,6 +10,10 @@
             <input name="name" value="{{ old("name", $user->name) }}" required class="w-full rounded-lg border-gray-300">
         </div>
         <div>
+            <label class="block text-sm font-medium mb-1">Email</label>
+            <input type="email" name="email" value="{{ old("email", $user->email) }}" required class="w-full rounded-lg border-gray-300">
+        </div>
+        <div>
             <label class="block text-sm font-medium mb-1">Nama Usaha</label>
             <input name="business_name" value="{{ old("business_name", $user->business_name) }}" class="w-full rounded-lg border-gray-300">
         </div>
@@ -27,7 +31,7 @@
             <label class="block text-sm font-medium mb-1">Alamat</label>
             <textarea name="address" rows="2" class="w-full rounded-lg border-gray-300">{{ old("address", $user->address) }}</textarea>
         </div>
-        <p class="text-xs text-gray-400">Email: {{ $user->email }} · Jenis akun: {{ $user->isSupply() ? "Supply" : "Demand" }}</p>
+        <p class="text-xs text-gray-400">Jenis akun: {{ $user->isSupply() ? "Supply" : "Demand" }}</p>
         <button class="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold py-2.5 rounded-lg">Simpan Perubahan</button>
     </form>
 </div>

@@ -12,7 +12,7 @@ class ProfileController extends Controller
         /** @var \App\Models\User $user */
         $user = auth()->user();
 
-        return view("profile.edit", compact("user"));
+        return view("profile.edit", ["user" => auth()->user()]);
     }
 
     public function update(Request $request)
