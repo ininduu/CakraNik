@@ -1,58 +1,71 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# CakraNik: Urban Circular Economy Platform for Organic Waste Exchange
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+[![Laravel](https://img.shields.io/badge/Laravel-13.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
+[![PHP](https://img.shields.io/badge/PHP-8.3-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
+[![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![SDGs](https://img.shields.io/badge/SDGs-11_%26_12-E5243B?style=for-the-badge)](https://sdgs.un.org/)
 
-## About Laravel
+> **ANFORCOM 2026 Diponegoro Software Development Competition (DSDC)**  
+> **Theme:** *Engineering the Circular City: Software Solutions for a Sustainable and Healthy Urban Future*[cite: 4]  
+> **Sub-theme:** *Smart Waste & Resource Circularity Systems*[cite: 4]  
+> 🔗 **Demo Video:** [YouTube Demo](https://youtu.be/UK9nowKAHbY)[cite: 26]  
+> 🔗 **Repository:** [GitHub Repository](https://github.com/ininduu/CakraNik.git)[cite: 26]
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 📌 1. The Problem: Food Loss and Waste (FLW)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Indonesia faces severe environmental and socioeconomic challenges driven by unmanaged food loss and waste[cite: 2]:
+* **National Impact:** National FLW accumulates between **38 and 48 million tons per year** (115–184 kg/capita/year), causing economic losses estimated at **IDR 213–551 trillion annually**[cite: 2]. Data from SIPSN KLHK (2025) confirms that **food waste accounts for 40.76% of total national waste**, significantly surpassing plastic waste[cite: 2].
+* **Local Urban Crisis (Semarang City):** Semarang generated **434,243 tons of waste annually**, the highest volume in Central Java[cite: 1, 2]. Consequently, the Jatibarang Landfill experiences severe overcapacity[cite: 2]. Meanwhile, **41.33% of this municipal organic waste is recoverable** for productive applications such as animal feed, Black Soldier Fly (BSF) larvae cultivation, and organic compost production[cite: 3].
+* **The Information & Coordination Gap:** Supply and demand exist simultaneously, but lack an institutional bridge[cite: 3]. The HoReCa sector (Hotels, Restaurants, Catering) incurs waste disposal costs and lacks coordinated channels to offload organic byproducts[cite: 1, 3, 5]. Conversely, urban farmers and BSF maggot breeders face persistent feedstock shortages[cite: 1, 2, 3].
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 💡 2. The Solution: CakraNik
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+**CakraNik** is a bilateral digital platform engineered to connect organic waste providers (**Supply**) with urban agricultural and bioconversion actors (**Demand**)[cite: 1, 5]. Acting as a "circular broker," CakraNik transforms linear food disposal pathways into a structured, accountable circular economy network[cite: 1, 3, 23].
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+### Core Value Propositions:
+* **Targeted Matching Engine:** An algorithmic recommendation system pairing listings based on material category, geographic location, and required volume.
+* **Verifiable Transaction Lifecycle:** A structured exchange pipeline (Request ➔ Review/Approval ➔ Photo-verified Delivery Confirmation) preventing fraudulent claims and ensuring chain of custody[cite: 1, 4, 16].
+* **Auditable Circular Dashboard:** Quantitative metrics tracking diverted organic waste measured in standard units (kilograms, liters, sacks)[cite: 1, 16].
 
-## Agentic Development
+---
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+## ⚙ 3. Software Engineering Aspects
 
-```bash
-composer require laravel/boost --dev
+CakraNik is architected using domain-driven and clean code principles to guarantee reliability, data integrity, and modular scalability[cite: 11, 12].
 
-php artisan boost:install
-```
+### A. Development Methodology
+Engineered using an **Agile Iterative Framework**:
+1. **Requirements Analysis:** Comprehensive elicitation of Functional Requirements (FR-01 to FR-12) and Non-Functional Requirements (Performance target $<3$s response time, Role-Based Access Control, Data Reliability)[cite: 7, 10, 11, 12].
+2. **System & Data Modeling:** Conceptualized through Use Case diagrams, Entity Relationship Diagrams (ERD), and 3NF database normalization schemes[cite: 6, 13, 14].
+3. **Iterative Sprint Implementation:** Incremental development across authentication, material cataloging, transaction state machines, notifications, and analytics modules[cite: 6, 7].
+4. **Verification & Refinement:** Systematic unit and end-to-end user scenario testing, database query indexing optimization for transaction logs, timezone standardizations, and upload payload validation.
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+### B. System Architecture & Data Flow
+The platform implements the standard **Model-View-Controller (MVC)** architectural pattern within the Laravel framework[cite: 6, 15]:
+* **HTTP Routing & Security Middleware:** Incoming requests pass through role validation middleware enforcing Role-Based Access Control (RBAC).
+* **Controller Layer:** Coordinates domain business logic, pagination, and recommendation filters.
+* **Data Access & Persistence (Eloquent ORM):** Interacts with normalized MySQL relational tables via indexed queries for optimal throughput[cite: 15, 16].
+* **Notification Layer:** Utilizes Laravel's internal database notification channel for state change events.
+* **Storage Abstraction:** Decoupled storage filesystem architecture (prepared for seamless migration from local disk storage to cloud-native S3 object storage)[cite: 15, 16, 23].
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```text
+[ Browser / Client ]
+         │
+   (HTTP Request)
+         ▼
+[ Web Routes & RBAC Middleware ]
+         │
+         ▼
+[ Controller Layer (Business Logic) ] ───► [ Recommendation Engine ]
+         │                                          │
+         ├───► [ Eloquent Models ] ──► [ MySQL DB (Indexed) ]
+         │
+         ├───► [ Filesystem Layer ] ──► [ Local Disk / S3 Object Storage ]
+         │
+         ▼
+[ Blade Views + Tailwind CSS Engine ]
