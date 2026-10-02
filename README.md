@@ -105,4 +105,4 @@ The software is architected using the **Model-View-Controller (MVC)** architectu
                            ▼
                    (Rendered HTML/CSS)
 
-### 
+```text
