@@ -9,8 +9,8 @@
 > **ANFORCOM 2026 Diponegoro Software Development Competition (DSDC)**  
 > **Theme:** *Engineering the Circular City: Software Solutions for a Sustainable and Healthy Urban Future*[cite: 4]  
 > **Sub-theme:** *Smart Waste & Resource Circularity Systems*[cite: 4]  
-> 🔗 **Demo Video:** [YouTube Demo](https://youtu.be/UK9nowKAHbY)[cite: 26]  
-> 🔗 **Repository:** [GitHub Repository](https://github.com/ininduu/CakraNik.git)[cite: 26]
+> 🔗 **Demo Video:** [YouTube Demo](https://youtu.be/UK9nowKAHbY)
+> 🔗 **Repository:** [GitHub Repository](https://github.com/ininduu/CakraNik.git)
 
 ---
 
